@@ -77,7 +77,7 @@ saludo:
 charla-taller:
 	$(call creadir, "bin", $(BIN))
 	$(call md-pdf, \
-	"Git y GitHub - Charla-Taller", \
+	"Taller-Git-y-Github", \
 	$(SRC), \
 	$(BIN))
 
