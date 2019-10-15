@@ -1,10 +1,14 @@
-# git-y-github-taller
+# taller-git-y-github
 
-Documentación sobre el taller que se realizará el 10 de octubre de 2019 en la ETSIIT de la Universidad de Granada.
+Documentación sobre el taller que se realizó el 10 de octubre de 2019 en la ETSIIT de la Universidad de Granada.
 
-Si no puedes venir a este taller, puedes leer el documento que hemos creado con toda la información que se dará a los asistentes.
+Si no pudiste venir a este taller, puedes leer el documento que hemos creado con toda la información que se dará a los asistentes.
 
-## DEPENDENCIAS
+## DESCARGA DEL DOCUMENTO
+
+Puedes descargar el documento sin compilarlo en la sección *releases* a la cabecera del repositorio.
+
+## DEPENDENCIAS DE COMPILACIÓN
 
 - LaTeX
 - make
