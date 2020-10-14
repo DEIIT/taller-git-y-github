@@ -23,3 +23,8 @@ make
 ```
 
 Se generará un fichero PDF en un nuevo directorio `bin`.
+
+## ANIMACIONES
+
+En el taller de octubre de 2020 se presentaron unas animaciones creadas con [manim](https://github.com/3b1b/manim).
+El fichero `src/taller-git-github.py` contiene el código fuente de dichas animaciones.
