@@ -91,7 +91,7 @@ Borrarlos o desplazarlos con estas órdenes borrará o desplazará los ficheros 
 Al añadir ficheros para la siguiente actualización del repositorio pasan a estar en estado **staged** (¿escenificado?).
 Esto quiere decir que, hasta que no se haga efectiva la actualización, los cambios sobre estos ficheros están meramente en consideración para ella.
 
-Si decidiéramos que no queremos añadir algunos de los ficheros a la siguiente actualización, podemos usar la orden `git restore --staged <ficheros>` para no incluirlos pero que conserven los cambios:
+Si decidimos que no queremos añadir algunos de los ficheros a la siguiente actualización, podemos usar la orden `git restore --staged <ficheros>` para no incluirlos pero que conserven los cambios:
 
 ```sh
 git status
@@ -188,7 +188,7 @@ La letra a la derecha del nombre del fichero nos indica el cambios que se ha rea
 
 ### `git diff`
 
-Con `git log` y `git whatchanged` podemos ver qué ficheros se han cambiado en cada commit. Pero. ¿cuáles han sido estos cambios?
+Con `git log` y `git whatchanged` podemos ver qué ficheros se han cambiado en cada commit. Pero, ¿cuáles han sido estos cambios?
 
 La orden `git diff <commit_inicio> [commit_fin]` nos permite ver qué cambios se han realizado desde `commit_inicio` hasta `commit_fin`.
 Si no se especifica `commit_fin`, éste será `HEAD`.
@@ -343,7 +343,7 @@ Esto no elimina los cambios realizados sobre la rama antes de realizar la elimin
 
 ### `git switch`
 
-Para cambiar de rama utilizamos `git switch <rama>`, siendo `<rama>` una rama ya existnte.
+Para cambiar de rama utilizamos `git switch <rama>`, siendo `<rama>` una rama ya existente.
 De esta forma podemos hacer commits en ambas ramas.
 
 Por ejemplo, supongamos que tenemos el repositorio del apartado anterior:
@@ -365,7 +365,7 @@ REPO: *master:  O---A---B---------E--->
                     dev:  C---D------->
 ```
 
-Es importante aprecier que los commits `B` y `E` se han separado para dar espacio a `C` y `D` y crear una sensación de progresión temporal.
+Es importante apreciar que los commits `B` y `E` se han separado para dar espacio a `C` y `D` y crear una sensación de progresión temporal.
 Esto es únicamente un detalle de la representación gráfica de ambas ramas, ya que a git no le importa el momento de realización del commit dentro de la propia rama.
 
 ### `git merge`
@@ -408,7 +408,7 @@ REPO: *master:  O---A---B---D---F------>
 
 ### `git rebase`
 
-En contraposición a la unión de dos ramas, podemos hacer un *rebase* (¿recimentación?) de una rama con todos los commits de otra hasta el momento.
+En contraposición a la unión de dos ramas, podemos hacer un *rebase* (reorganización) de una rama con todos los commits de otra hasta el momento.
 
 Colocándonos en la rama sobre la que queremos hacer rebase, ejecutamos `git rebase <rama>` para unir todos los commits realizamos en la rama `rama` a la nuestra previo a todos los commits de la rama actual que no se han unido a la rama `rama`.
 Es más fácil verlo visualmente:
@@ -479,7 +479,7 @@ La orden `git revert <commit> -m "Mensaje del commit"` nos permite realizar un c
 Para crear un remoto en GitHub podemos ir a la pantalla de inicio o a nuestra lista de repositorios y pulsar el botón de **new** en verde.
 Al crear un repositorio GitHub nos varias elecciones:
 
-**Público o privado:** Los repositorios con un remoto público son visibles para todo el mundo y los privados, sólo por quienes tengan permisos de colaboración.
+**Público o privado:** Los repositorios con un remoto público son visibles para todo el mundo y los privados, sólo para quienes tengan permisos de colaboración.
 
 **Crear README.md:** Inicializa el repositorio con un fichero `README.md` que contiene el título del mismo.
 
@@ -495,14 +495,14 @@ En un primer vistazo, GitHub nos permite ver el número de commits, ramas, relea
 La wiki es una página en la que se puede (y debe) escribir documentación sobre el repositorio, sus usos, funciones y todo aquello que facilite el trabajo con el mismo.
 
 Las opciones nos permiten cambiar el nombre y opciones básicas del remoto (incluso eliminarlo), añadir colaboradores y formar equipos, agregar integración con servicios de terceros y gestionar la protección de las ramas.
-Esta protección permite a los adminsitradores del repositorio crear restricciones para que los cambios de otros usuarios no puedan ser aceptados sin consenso del equipo.
+Esta protección permite a los administradores del repositorio crear restricciones para que los cambios de otros usuarios no puedan ser aceptados sin consenso del equipo.
 
 ### Issues
 
 Si te encuentras con un problema al utilizar el contenido de un repositorio puedes enviar una issue explicando dicho problema de forma detallada.
-Tras esto, un administrador del repositorio comenzará una discusión pública contigo tanto para ayudarte a solventarla como para arreglar aquello que te está causando el problema.
+Tras esto, un administrador del repositorio comenzará una discusión pública contigo tanto para ayudarte a solventarla, como para arreglar aquello que te está causando el problema.
 
-Muchos repositorios incorporan secciones específicas en el apartado de issues para gestionar más ágilmente a qué se refiere cada una y poder asignar así qué adminsitrador se ocupa de resolverlas.
+Muchos repositorios incorporan secciones específicas en el apartado de issues para gestionar más ágilmente a qué se refiere cada una y poder asignar así qué administrador se ocupa de resolverlas.
 
 ### Fork
 
