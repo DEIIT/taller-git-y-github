@@ -10,7 +10,7 @@ SRC = $(HOME)/src
 
 # Directorios de recursos para make
 MAKEDIR = $(HOME)/.make
-EISVOGEL = $(MAKEDIR)/eisvogel
+EISVOGEL = $$(pwd)/$(MAKEDIR)/eisvogel
 
 
 # ==============================================================================
